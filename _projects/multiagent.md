@@ -30,30 +30,30 @@ The multiagent dataset with all 53 scenes is available for download as one zip f
 ### <span style="font-weight: bold; color:#57068c">Demo Videos</span>
 #### Scene 1, "T-way" encounter
 <video width="80%" height="320" preload="auto" controls>
-  <source src="../../assets/img/multiagent/videos/1.mp4" type="video/webm">
+  <source src="/MARS/assets/img/multiagent/videos/1.mp4" type="video/webm">
 </video>
 
 #### Scene 2, encounter across a vegetation
 <video width="80%" height="320" preload="auto" controls>
-  <source src="../../assets/img/multiagent/videos/2.mp4" type="video/webm">
+  <source src="/MARS/assets/img/multiagent/videos/2.mp4" type="video/webm">
 </video>
 
 #### Scene 18, straight road tailgating
 <video width="80%" height="320" preload="auto" controls>
-  <source src="../../assets/img/multiagent/videos/18.mp4" type="video/webm">
+  <source src="/MARS/assets/img/multiagent/videos/18.mp4" type="video/webm">
 </video>
 
 #### Scene 21, three agents at intersection
 <video width="80%" height="320" preload="auto" controls>
-  <source src="../../assets/img/multiagent/videos/21.mp4" type="video/webm">
+  <source src="/MARS/assets/img/multiagent/videos/21.mp4" type="video/webm">
 </video>
 
 #### Scene 29, tailgating at corner
 <video width="80%" height="320" preload="auto" controls>
-  <source src="../../assets/img/multiagent/videos/29.mp4" type="video/webm">
+  <source src="/MARS/assets/img/multiagent/videos/29.mp4" type="video/webm">
 </video>
 
 #### Scene 30, opposite way encounter
 <video width="80%" height="320" preload="auto" controls>
-  <source src="../../assets/img/multiagent/videos/30.mp4" type="video/webm">
+  <source src="/MARS/assets/img/multiagent/videos/30.mp4" type="video/webm">
 </video>

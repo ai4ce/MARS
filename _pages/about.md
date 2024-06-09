@@ -11,7 +11,7 @@ social: true # includes social icons at the bottom of the page
 
 ---
 
-<img src="./assets/img/teaser.jpg" alt="drawing" style="width:1200px;" class="center"/>
+<img src="/MARS/assets/img/teaser.jpg" alt="drawing" style="width:1200px;" class="center"/>
 
 ---
 

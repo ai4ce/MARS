@@ -33,26 +33,26 @@ The multitraversal dataset is seperated by location into 66 individual zip files
 ### <span style="font-weight: bold; color:#57068c">Demo Videos</span>
 #### Location 3, narrow road
 <video width="80%" height="320" preload="auto" controls>
-  <source src="../../assets/img/multitraversal/videos/3.mp4" type="video/webm">
+  <source src="/MARS/assets/img/multitraversal/videos/3.mp4" type="video/webm">
 </video>
 
 #### Location 15, intersection
 <video width="80%" height="320" preload="auto" controls>
-  <source src="../../assets/img/multitraversal/videos/15.mp4" type="video/webm">
+  <source src="/MARS/assets/img/multitraversal/videos/15.mp4" type="video/webm">
 </video>
 
 #### Location 24 intersection, multiple direction
 <video width="80%" height="320" preload="auto" controls>
-  <source src="../../assets/img/multitraversal/videos/24.mp4" type="video/webm">
+  <source src="/MARS/assets/img/multitraversal/videos/24.mp4" type="video/webm">
 </video>
 
 #### Location 57,  open field
 <video width="80%" height="320" preload="auto" controls>
-  <source src="../../assets/img/multitraversal/videos/57.mp4" type="video/webm">
+  <source src="/MARS/assets/img/multitraversal/videos/57.mp4" type="video/webm">
 </video>
 
 #### Location 61, highway & bridge
 <video width="80%" height="320" preload="auto" controls>
-  <source src="../../assets/img/multitraversal/videos/61.mp4" type="video/webm">
+  <source src="/MARS/assets/img/multitraversal/videos/61.mp4" type="video/webm">
 </video>
 
