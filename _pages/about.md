@@ -7,7 +7,7 @@ subtitle:
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 ---
 
@@ -24,5 +24,14 @@ Each vehicle is equipped with a LiDAR and surround-view RGB cameras.
 We curate two subsets in MARS: one facilitates collaborative driving with multiple vehicles simultaneously present at the same location, and the other enables memory retrospection through asynchronous traversals of the same location by multiple vehicles. 
 We conduct experiments in place recognition and neural reconstruction. 
 More importantly, MARS introduces new research opportunities and challenges such as multitraversal 3D reconstruction, multiagent perception, and unsupervised object discovery.
+
+---
+<br/>
+
+<p style="text-align: center;">
+    <img src="/MARS/assets/img/nyu_logo_2.png" alt="drawing" style="width:160px; margin: 0 100px 20px 150px;"/>
+    <img src="/MARS/assets/img/ai4ce_logo.png" alt="drawing" style="width:200px; margin: 0 100px 20px 0;"/>
+    <img src="/MARS/assets/img/may_logo.png" alt="drawing" style="width:200px; margin: 0 100px 20px 0;"/>
+</p>
 
 ---

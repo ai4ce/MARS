@@ -28,32 +28,67 @@ The multiagent dataset with all 53 scenes is available for download as one zip f
 ---
 
 ### <span style="font-weight: bold; color:#57068c">Demo Videos</span>
-#### Scene 1, "T-way" encounter
+<p style="text-align: center;">
 <video width="80%" height="320" preload="auto" controls>
   <source src="/MARS/assets/img/multiagent/videos/1.mp4" type="video/webm">
 </video>
 
-#### Scene 2, encounter across a vegetation
-<video width="80%" height="320" preload="auto" controls>
-  <source src="/MARS/assets/img/multiagent/videos/2.mp4" type="video/webm">
-</video>
+<p style="text-align: center;">
+    <span style="font-weight: bold;">Scene 1, "T-way" encounter</span>
+</p>
+<br/>
 
-#### Scene 18, straight road tailgating
-<video width="80%" height="320" preload="auto" controls>
-  <source src="/MARS/assets/img/multiagent/videos/18.mp4" type="video/webm">
-</video>
+<p style="text-align: center;">
+    <video width="80%" height="320" preload="auto" controls>
+      <source src="/MARS/assets/img/multiagent/videos/2.mp4" type="video/webm">
+    </video>
+</p>
 
-#### Scene 21, three agents at intersection
-<video width="80%" height="320" preload="auto" controls>
-  <source src="/MARS/assets/img/multiagent/videos/21.mp4" type="video/webm">
-</video>
+<p style="text-align: center;">
+    <span style="font-weight: bold;">Scene 2, encounter across a vegetation</span>
+</p>
+<br/>
 
-#### Scene 29, tailgating at corner
-<video width="80%" height="320" preload="auto" controls>
-  <source src="/MARS/assets/img/multiagent/videos/29.mp4" type="video/webm">
-</video>
+<p style="text-align: center;">
+    <video width="80%" height="320" preload="auto" controls>
+      <source src="/MARS/assets/img/multiagent/videos/18.mp4" type="video/webm">
+    </video>
+</p>
 
-#### Scene 30, opposite way encounter
-<video width="80%" height="320" preload="auto" controls>
-  <source src="/MARS/assets/img/multiagent/videos/30.mp4" type="video/webm">
-</video>
+<p style="text-align: center;">
+    <span style="font-weight: bold;">Scene 18, straight road tailgating</span>
+</p>
+<br/>
+
+<p style="text-align: center;">
+    <video width="80%" height="320" preload="auto" controls>
+      <source src="/MARS/assets/img/multiagent/videos/21.mp4" type="video/webm">
+    </video>
+</p>
+
+<p style="text-align: center;">
+    <span style="font-weight: bold;">Scene 21, three agents at intersection</span>
+</p>
+<br/>
+
+<p style="text-align: center;">
+    <video width="80%" height="320" preload="auto" controls>
+      <source src="/MARS/assets/img/multiagent/videos/29.mp4" type="video/webm">
+    </video>
+</p>
+
+<p style="text-align: center;">
+    <span style="font-weight: bold;">Scene 29, tailgating at corner</span>
+</p>
+<br/>
+
+<p style="text-align: center;">
+    <video width="80%" height="320" preload="auto" controls>
+      <source src="/MARS/assets/img/multiagent/videos/30.mp4" type="video/webm">
+    </video>
+</p>
+
+<p style="text-align: center;">
+    <span style="font-weight: bold;">Scene 30, opposite way encounter</span>
+</p>
+<br/>

@@ -2,7 +2,7 @@
 layout: page
 title: Datasets
 permalink: /projects/
-nav: true
+nav: false
 nav_order: 4
 
 [//]: # (display_categories: [work, fun])

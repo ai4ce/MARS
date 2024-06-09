@@ -31,28 +31,57 @@ The multitraversal dataset is seperated by location into 66 individual zip files
 ---
 
 ### <span style="font-weight: bold; color:#57068c">Demo Videos</span>
-#### Location 3, narrow road
-<video width="80%" height="320" preload="auto" controls>
-  <source src="/MARS/assets/img/multitraversal/videos/3.mp4" type="video/webm">
-</video>
+<p style="text-align: center;">
+    <video width="80%" height="320" preload="auto" controls>
+      <source src="/MARS/assets/img/multitraversal/videos/3.mp4" type="video/webm">
+    </video>
+</p>
 
-#### Location 15, intersection
-<video width="80%" height="320" preload="auto" controls>
-  <source src="/MARS/assets/img/multitraversal/videos/15.mp4" type="video/webm">
-</video>
+<p style="text-align: center;">
+    <span style="font-weight: bold;">Location 3, narrow road</span>
+</p>
+<br/>
 
-#### Location 24 intersection, multiple direction
-<video width="80%" height="320" preload="auto" controls>
-  <source src="/MARS/assets/img/multitraversal/videos/24.mp4" type="video/webm">
-</video>
+<p style="text-align: center;">
+    <video width="80%" height="320" preload="auto" controls>
+      <source src="/MARS/assets/img/multitraversal/videos/15.mp4" type="video/webm">
+    </video>
+</p>
 
-#### Location 57,  open field
-<video width="80%" height="320" preload="auto" controls>
-  <source src="/MARS/assets/img/multitraversal/videos/57.mp4" type="video/webm">
-</video>
+<p style="text-align: center;">
+    <span style="font-weight: bold;">Location 15, intersection</span>
+</p>
+<br/>
 
-#### Location 61, highway & bridge
-<video width="80%" height="320" preload="auto" controls>
-  <source src="/MARS/assets/img/multitraversal/videos/61.mp4" type="video/webm">
-</video>
+<p style="text-align: center;">
+    <video width="80%" height="320" preload="auto" controls>
+      <source src="/MARS/assets/img/multitraversal/videos/24.mp4" type="video/webm">
+    </video>
+</p>
 
+<p style="text-align: center;">
+    <span style="font-weight: bold;">Location 24 intersection, multiple direction</span>
+</p>
+<br/>
+
+<p style="text-align: center;">
+    <video width="80%" height="320" preload="auto" controls>
+      <source src="/MARS/assets/img/multitraversal/videos/57.mp4" type="video/webm">
+    </video>
+</p>
+
+<p style="text-align: center;">
+    <span style="font-weight: bold;">Location 57,  open field</span>
+</p>
+<br/>
+
+<p style="text-align: center;">
+    <video width="80%" height="320" preload="auto" controls>
+      <source src="/MARS/assets/img/multitraversal/videos/61.mp4" type="video/webm">
+    </video>
+</p>
+
+<p style="text-align: center;">
+    <span style="font-weight: bold;">Location 61, highway & bridge</span>
+</p>
+<br/>

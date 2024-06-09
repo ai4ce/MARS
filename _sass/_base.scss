@@ -547,6 +547,17 @@ footer.sticky-bottom {
   }
 }
 
+.frontpage-title {
+  display: inline-block;
+  font-size: 10em;
+  font-weight: bold;
+  background: -webkit-linear-gradient(left, #52047b, #aa3c0c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 .post-list {
   margin: 0;
   margin-bottom: 40px;
