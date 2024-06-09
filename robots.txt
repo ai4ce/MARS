@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ai4ce.github.io/MARS//sitemap.xml
+Sitemap: https://ai4ce.github.io/MARS/sitemap.xml
