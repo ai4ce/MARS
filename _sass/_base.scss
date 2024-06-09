@@ -32,6 +32,17 @@ table {
   th {
     font-weight: bold;
   }
+
+  th {
+    background-color: var(--global-bg-color);
+  }
+
+  tr:nth-child(even) {
+    background-color: var(--global-bg-color);
+  }
+  tr:nth-child(odd) {
+    background-color: var(--global-divider-color);
+  }
 }
 
 a,

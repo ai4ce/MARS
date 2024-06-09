@@ -1,0 +1,20 @@
+---
+layout: page
+---
+<div class="post">
+  <article>
+    {% if page.profiles %}
+      {% for profile in page.profiles %}
+        <hr>
+        <div class="clearfix">
+          {% if profile.content %}
+            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+            {{ profile_content | markdownify }}
+          {% else %}
+            {{ content }}
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% endif %}
+  </article>
+</div>

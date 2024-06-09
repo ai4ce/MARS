@@ -1,25 +1,28 @@
 ---
 layout: about
-title: about
+title: Overview
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle:
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<img src="./assets/img/teaser.jpg" alt="drawing" style="width:1200px;" class="center"/>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+---
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+In collaboration with the self-driving company [<span style="font-weight: bold; color:#369040">May Mobility</span>](https://maymobility.com/), we present the MARS dataset which unifies scenarios that enable multiagent, multitraversal, and multimodal autonomous vehicle research. 
+
+MARS is collected with a fleet of autonomous vehicles driving within a certain geographical area. 
+Each vehicle has its own route and different vehicles may appear at nearby locations. 
+Each vehicle is equipped with a LiDAR and surround-view RGB cameras.
+
+We curate two subsets in MARS: one facilitates collaborative driving with multiple vehicles simultaneously present at the same location, and the other enables memory retrospection through asynchronous traversals of the same location by multiple vehicles. 
+We conduct experiments in place recognition and neural reconstruction. 
+More importantly, MARS introduces new research opportunities and challenges such as multitraversal 3D reconstruction, multiagent perception, and unsupervised object discovery.
+
+---
