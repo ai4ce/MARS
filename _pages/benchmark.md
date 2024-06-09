@@ -17,6 +17,19 @@ social: true
 In our single-traversal dynamic scene reconstruction experiments, we selected 10 different locations, each with one traversal, aiming to capture and represent complex urban environments. 
 For our multitraversal environment reconstruction experiments, we selected a total of 50 traversals. This comprised 10 unique locations, with 5 traversals for each location, enabling us to capture variations in illuminating conditions and weather.
 
+
+**Single-traversal experiments**: 
+PVG achieves higher SSIM scores and better LPIPS scores, indicating enhanced structural details. 
+EmerNeRF excels in PSNR, likely due to its novel approach of dynamic-static decomposition. 
+EmerNeRF and PVG both demonstrate the ability to perfectly render dynamic objects like moving cars, whereas iNGP and 3DGS exhibit relatively poor performance in this regard.
+
+**Multitraversal experiments**:
+The main challenge is to handle appearance variations and dynamic objects across repeated traversals over time.
+In our experiment, iNGP achieves the best similarity metrics since it preserves the most information about dynamic objects. 
+RobustNeRF performs best in eliminating dynamic objects, albeit at the cost of rendering static objects with less detail. 
+SegFormer achieves superior visual results compared to the other two methods. 
+Yet the shadows of cars are not comletely removed, likely due to the inadequate recognition of shadows by semantic segmentation models.
+
 <br/>
 
 <p style="text-align: center;">
@@ -41,6 +54,7 @@ For our multitraversal environment reconstruction experiments, we selected a tot
 <br/>
 
 ---
+
 
 #### The multiagent and multitraversal datasets are now available for download!
 
