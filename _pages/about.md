@@ -9,9 +9,14 @@ news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
+
 ---
 
+<br/>
+
 <img src="/MARS/assets/img/teaser.jpg" alt="drawing" style="width:1200px;" class="center"/>
+
+<br/>
 
 ---
 
@@ -26,6 +31,7 @@ We conduct experiments in place recognition and neural reconstruction.
 More importantly, MARS introduces new research opportunities and challenges such as multitraversal 3D reconstruction, multiagent perception, and unsupervised object discovery.
 
 ---
+
 <br/>
 
 <p style="text-align: center;">
