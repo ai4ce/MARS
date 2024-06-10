@@ -32,7 +32,7 @@ All sensor data sampled to 10Hz for synchronization.
 
 ## Sensor Locations & coordinate frames
 <p style="text-align: center;">
-    <img src="../assets/img/vehicle_setup.jpg" alt="drawing" style="width:800px;"/>
+    <img src="/MARS/assets/img/vehicle_setup.jpg" alt="drawing" style="width:67%;"/>
 </p>
 
 <br/>

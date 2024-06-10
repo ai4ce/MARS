@@ -21,7 +21,7 @@ As demonstrated, the vehicles' routes are randomly distributed across the area.
 Note: the 67 locations are indexed from 0-66, but #2 has been removed due to scarcity of data.
 
 <p style="text-align: center;">
-    <img src="../assets/img/route/map.png" alt="drawing" style="width:800px;"/>
+    <img src="/MARS/assets/img/route/map.png" alt="drawing" style="width:67%;"/>
 </p>
 
 <br/>
@@ -32,12 +32,12 @@ The full route is over 20 kilometers long, encompassing urban, residential, high
 The fleet operates nonstop every workday across the year, therefore covering various lighting and weather conditions with its data.
 
 <p style="text-align: center;">
-    <img src="../assets/img/route/urban_rain.jpg" alt="drawing" style="width:300px; margin: 0 20px 20px 0;"/>
-    <img src="../assets/img/route/residential_sunny.jpg" alt="drawing" style="width:300px; margin: 0 20px 20px 0;"/>
-    <img src="../assets/img/route/bridge_sunny.jpg" alt="drawing" style="width:300px; margin: 0 20px 20px 0;"/>
-    <img src="../assets/img/route/narrow_snow.jpg" alt="drawing" style="width:300px; margin: 0 20px 20px 0;"/>
-    <img src="../assets/img/route/highway_sunny.jpg" alt="drawing" style="width:300px; margin: 0 20px 20px 0;"/>
-    <img src="../assets/img/route/openfield_snow.jpg" alt="drawing" style="width:300px; margin: 0 20px 20px 0;"/>
+    <img src="/MARS/assets/img/route/urban_rain.jpg" alt="drawing" style="width:25%; margin: 0 2% 2% 0;"/>
+    <img src="/MARS/assets/img/route/residential_sunny.jpg" alt="drawing" style="width:25%; margin: 0 2% 2% 0;"/>
+    <img src="/MARS/assets/img/route/bridge_sunny.jpg" alt="drawing" style="width:25%; margin: 0 2% 2% 0;"/>
+    <img src="/MARS/assets/img/route/narrow_snow.jpg" alt="drawing" style="width:25%; margin: 0 2% 2% 0;"/>
+    <img src="/MARS/assets/img/route/highway_sunny.jpg" alt="drawing" style="width:25%; margin: 0 2% 2% 0;"/>
+    <img src="/MARS/assets/img/route/openfield_snow.jpg" alt="drawing" style="width:25%; margin: 0 2% 2% 0;"/>
 </p>
 
 <br/>

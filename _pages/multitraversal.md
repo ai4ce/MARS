@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Multitraversal Subset"
+title: "Multitraversal"
 permalink: /multitraversal/
 nav: true
 nav_order: 4

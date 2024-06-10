@@ -14,7 +14,7 @@ social: false # includes social icons at the bottom of the page
 
 <br/>
 
-<img src="/MARS/assets/img/teaser.jpg" alt="drawing" style="width:1200px;" class="center"/>
+<img src="/MARS/assets/img/teaser.jpg" alt="drawing" style="width:100%;" class="center"/>
 
 <br/>
 
@@ -36,11 +36,11 @@ More importantly, MARS introduces new research opportunities and challenges such
 
 <p style="text-align: center;">
     <a href="https://www.nyu.edu/">
-    <img src="/MARS/assets/img/nyu_logo_2.png" alt="drawing" style="width:160px; margin: 0 100px 20px 140px;"></a>
+    <img src="/MARS/assets/img/nyu_logo_2.png" alt="drawing" style="width:14%; margin: 0 8% 2% 11%;"></a>
     <a href="https://ai4ce.github.io/">
-    <img src="/MARS/assets/img/ai4ce_logo.png" alt="drawing" style="width:200px; margin: 0 100px 20px 0;"/></a>
+    <img src="/MARS/assets/img/ai4ce_logo.png" alt="drawing" style="width:17%; margin: 0 8% 2% 0;"/></a>
     <a href="https://maymobility.com/">
-    <img src="/MARS/assets/img/may_logo.png" alt="drawing" style="width:200px; margin: 0 100px 20px 0;"/></a>
+    <img src="/MARS/assets/img/may_logo.png" alt="drawing" style="width:17%; margin: 0 8% 2% 0;"/></a>
 </p>
 
 ---

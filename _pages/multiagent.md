@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Multiagent Subset"
+title: "Multiagent"
 permalink: /multiagent/
 nav: true
 nav_order: 4

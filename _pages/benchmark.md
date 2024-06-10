@@ -33,7 +33,7 @@ Yet the shadows of cars are not comletely removed, likely due to the inadequate 
 <br/>
 
 <p style="text-align: center;">
-    <img src="/MARS/assets/img/nerf_quantitative_result.png" alt="drawing" style="width:600px;"/>
+    <img src="/MARS/assets/img/nerf_quantitative_result.png" alt="drawing" style="width:50%;"/>
 </p>
 
 <p style="text-align: center;">
@@ -43,8 +43,8 @@ Yet the shadows of cars are not comletely removed, likely due to the inadequate 
 <br/>
 
 <p style="text-align: center;">
-    <img src="/MARS/assets/img/nerf_qualitative_1.jpg" alt="drawing" style="width:500px; margin: 0 20px 20px 0;"/>
-    <img src="/MARS/assets/img/nerf_qualitative_2.jpg" alt="drawing" style="width:500px; margin: 0 20px 20px 0;"/>
+    <img src="/MARS/assets/img/nerf_qualitative_1.jpg" alt="drawing" style="width:42%; margin: 0 2% 2% 0;"/>
+    <img src="/MARS/assets/img/nerf_qualitative_2.jpg" alt="drawing" style="width:42%; margin: 0 2% 2% 0;"/>
 </p>
 
 <p style="text-align: center;">
