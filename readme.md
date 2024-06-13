@@ -9,11 +9,12 @@ Multiagent: the whole set is a NuScenes object, and each multi-agent encounter i
 <br/>
 
 ## Initialization
-First, install `nuscenes-devkit` following NuScenes's repo tutorial, [Devkit setup section](https://github.com/nutonomy/nuscenes-devkit?tab=readme-ov-file#devkit-setup)
+First, install `nuscenes-devkit` following NuScenes's repo tutorial, [Devkit setup section](https://github.com/nutonomy/nuscenes-devkit?tab=readme-ov-file#devkit-setup). The easiest way is install via pip:
+```
+pip install nuscenes-devkit
+```
 
-
-Note that the "version" variable is the name of the folder holding all .json metadata
-
+## Usage:
 Import NuScenes devkit:
 ```
 from nuscenes.nuscenes import NuScenes
@@ -21,6 +22,7 @@ from nuscenes.nuscenes import NuScenes
 
 Multitraversal example: loading data of location 10:
 ```
+# The "version" variable is the name of the folder holding all .json metadata tables.
 location = 10
 mars_10 = NuScenes(version='v1.0', dataroot=f'/MARS_multitraversal/{location}', verbose=True)
 ```
