@@ -9,6 +9,9 @@ Multiagent: the whole set is a NuScenes object.
 <br/>
 
 ## Initialization
+First, install `nuscenes-devkit` following NuScenes's repo tutorial, [Devkit setup section](https://github.com/nutonomy/nuscenes-devkit?tab=readme-ov-file#devkit-setup)
+
+
 Note that the "version" variable is the name of the folder holding all .json metadata
 
 Import NuScenes devkit:
