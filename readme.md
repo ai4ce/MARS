@@ -4,7 +4,7 @@
 
 Multitraversal: each location is saved as one NuScenes object, and each traversal is one scene.
 
-Multiagent: the whole set is a NuScenes object.
+Multiagent: the whole set is a NuScenes object, and each multi-agent encounter is one scene.
 
 <br/>
 
