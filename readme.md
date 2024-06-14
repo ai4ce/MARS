@@ -1,33 +1,72 @@
-# Open MARS Dataset
-![teaser](https://github.com/ai4ce/MARS/assets/105882130/963f7ea2-0590-42dc-9ddd-22a9b57f947c)
+# Multiagent Multitraversal Multimodal Self-Driving: Open MARS Dataset
+[Yiming Li](https://roboticsyimingli.github.io/), 
+[Zhiheng Li](https://zl3466.github.io/), 
+[Nuo Chen](), 
+[Moonjun Gong](https://moonjungong.github.io/), 
+[Zonglin Lyu](), 
+[Zehong Wang](), 
+[Peili Jiang](), 
+[Chen Feng](https://engineering.nyu.edu/faculty/chen-feng)
 
-<br/>
+[Paper](https://arxiv.org/abs/2406.09383)
 
-## Welcome to the tutorial of Open MARS Dataset!
-
-Our paper has been accepted on CVPR 2024 🎉🎉🎉
+[Tutorial](#tutorial)
 
 Checkout our [project website](https://ai4ce.github.io/MARS/) for demo videos.
 Codes to reproduce the videos are available in `/visualize` folder of `main` branch.
 
+![teaser](https://github.com/ai4ce/MARS/assets/105882130/963f7ea2-0590-42dc-9ddd-22a9b57f947c)
+
 <br/>
 
-## Intro
-### The MARS dataset is collected with a fleet of autonomous vehicles from [MayMobility](https://maymobility.com/).
+# News
 
-Our dataset uses the same structure as the [NuScenes](https://www.nuscenes.org/nuscenes) Dataset:
+- [2024/06] Both Multiagent and Multitraversal subsets are now available for download on [huggingface](https://huggingface.co/datasets/ai4ce/MARS). 
+
+- [2024/06]The preprint version is available on [arXiv]([https://huggingface.co/datasets/ai4ce/MARS](https://arxiv.org/abs/2406.09383)). 
+
+- [2024/02] Our paper has been accepted on CVPR 2024 🎉🎉🎉
+
+
+
+<br/>
+
+# Abstract
+In collaboration with the self-driving company [May Mobility](https://maymobility.com/), we present the MARS dataset which unifies scenarios that enable multiagent, multitraversal, and multimodal autonomous vehicle research.
+
+MARS is collected with a fleet of autonomous vehicles driving within a certain geographical area. Each vehicle has its own route and different vehicles may appear at nearby locations. Each vehicle is equipped with a LiDAR and surround-view RGB cameras.
+
+We curate two subsets in MARS: one facilitates collaborative driving with multiple vehicles simultaneously present at the same location, and the other enables memory retrospection through asynchronous traversals of the same location by multiple vehicles. We conduct experiments in place recognition and neural reconstruction. More importantly, MARS introduces new research opportunities and challenges such as multitraversal 3D reconstruction, multiagent perception, and unsupervised object discovery.
+
+
+## Our dataset uses the same structure as the [NuScenes](https://www.nuscenes.org/nuscenes) Dataset:
 
 - Multitraversal: each location is saved as one NuScenes object, and each traversal is one scene.
 - Multiagent: the whole set is a NuScenes object, and each multiagent encounter is one scene.
 
 <br/>
 
-## Download
-Both Multiagent and Multitraversal subsets are now available for [download on huggingface](https://huggingface.co/datasets/ai4ce/MARS). 
+# License
+[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 <br/>
 
-## Overview
+# Bibtex
+
+```
+@InProceedings{Li_2024_CVPR,
+    author    = {Li, Yiming and Li, Zhiheng and Chen, Nuo and Gong, Moonjun and Lyu, Zonglin and Wang, Zehong and Jiang, Peili and Feng, Chen},
+    title     = {Multiagent Multitraversal Multimodal Self-Driving: Open MARS Dataset},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {22041-22051}
+}
+```
+
+<br/>
+
+# Tutorial
 This tutorial explains how the NuScenes structure works in our dataset, including how you may access a scene and query its samples of sensor data.
 
 - [Devkit Initialization](#initialization)
