@@ -15,7 +15,7 @@ Codes to reproduce the videos are available in `/visualize` folder of `main` bra
 ## Intro
 ### The MARS dataset is collected with a fleet of autonomous vehicles from [MayMobility](https://maymobility.com/).
 
-The dataset follows the same structure as the [NuScenes](https://www.nuscenes.org/nuscenes) Dataset:
+Our dataset uses the same structure as the [NuScenes](https://www.nuscenes.org/nuscenes) Dataset:
 
 - Multitraversal: each location is saved as one NuScenes object, and each traversal is one scene.
 - Multiagent: the whole set is a NuScenes object, and each multi-agent encounter is one scene.
