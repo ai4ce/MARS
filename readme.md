@@ -1,4 +1,22 @@
-# Dataset Tutorial
+# Open MARS Dataset
+
+## Overview
+[Initialization](#initialization)
+
+[Scene](#scene)
+
+[Sample](#sample)
+
+[Sample Data](#sample-data)
+
+[LiDAR-Image projection](#lidar-image-projection)
+
+## Our paper has been accepted on CVPR 2024 🎉🎉🎉
+Checkout our [project website](https://ai4ce.github.io/MARS/) for an overview & demos.
+
+Codes to reproduce the demo videos on [our website](https://ai4ce.github.io/MARS/) are available in `/visualize` of the `main` branch.
+
+
 
 ### The MARS dataset follows the same structure as the NuScenes Dataset.
 
@@ -14,7 +32,6 @@ First, install `nuscenes-devkit` following NuScenes's repo tutorial, [Devkit set
 pip install nuscenes-devkit
 ```
 
-## Usage:
 Import NuScenes devkit:
 ```
 from nuscenes.nuscenes import NuScenes
@@ -345,12 +362,6 @@ Output:
 
 
 
-<br/>
-
-## Other visualizations
-Multitraversal and multiagent visualization codes to reproduce our demo videos on  are available in `/visualize`.
-
-Multitraversal:
 
 
 
