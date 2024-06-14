@@ -18,7 +18,7 @@ Codes to reproduce the videos are available in `/visualize` folder of `main` bra
 Our dataset uses the same structure as the [NuScenes](https://www.nuscenes.org/nuscenes) Dataset:
 
 - Multitraversal: each location is saved as one NuScenes object, and each traversal is one scene.
-- Multiagent: the whole set is a NuScenes object, and each multi-agent encounter is one scene.
+- Multiagent: the whole set is a NuScenes object, and each multiagent encounter is one scene.
 
 <br/>
 
