@@ -36,6 +36,7 @@ This tutorial explains how the NuScenes structure works in our dataset, includin
 - [Scene](#scene)
 - [Sample](#sample)
 - [Sample Data](#sample-data)
+  - [Sensor Names](#sensor-names)
   - [Camera](#camera-data)
   - [LiDAR](#lidar-data)
   - [IMU](#imu-data)
@@ -145,6 +146,7 @@ Output:
 <br/>
 
 ## Sample Data
+### Sensor Names
 Our sensor names are different from NuScenes' sensor names. It is important that you use the correct name when querying sensor data. Our sensor names are:
 ```
 ['CAM_FRONT_CENTER',
@@ -159,6 +161,9 @@ Our sensor names are different from NuScenes' sensor names. It is important that
 
 ---
 ### Camera Data
+All image data are already undistorted. 
+
+To load a piece data, we start with querying its `sample_data` dictionary object from the metadata:
 ```
 sensor = 'CAM_FRONT_CENTER'
 sample_data_token = my_sample['data'][sensor]
@@ -191,8 +196,14 @@ Output:
 - `prev`: previous data token for this sensor
 - `next`: next data token for this sensor
 
-All image data are already undistorted. You may now load the image in any ways you'd like. Here's an example using cv2:
+<br/>
+
+After getting the `sample_data` dictionary, Use NuScenes devkit's `get_sample_data()` function to retrieve the data's absolute path. 
+
+Then you may now load the image in any ways you'd like. Here's an example using `cv2`:
 ```
+import cv2
+
 data_path, boxes, camera_intrinsic = nusc.get_sample_data(sample_data_token)
 img = cv2.imread(data_path)
 cv2.imshow('fc_img', img)
@@ -211,6 +222,7 @@ array([[661.094568 ,   0.       , 370.6625195],
 
 ---
 ### LiDAR Data
+Same as loading camera data, we start with querying the `sample_data` dictionary for LiDAR sensor. 
 
 Impoirt data calss "LidarPointCloud" from NuScenes devkit for convenient lidar pcd loading and manipulation.
 
@@ -220,6 +232,7 @@ The 5-dimensional data array is in `pcd.points`. Below is an example of visualiz
 
 
 ```
+import open3d as o3d
 from nuscenes.utils.data_classes import LidarPointCloud
 
 sensor = 'LIDAR_FRONT_CENTER'
