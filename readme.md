@@ -1,28 +1,46 @@
 # Open MARS Dataset
+![teaser](https://github.com/ai4ce/MARS/assets/105882130/963f7ea2-0590-42dc-9ddd-22a9b57f947c)
+
+<br/>
+
+## Welcome to the tutorial of Open MARS Dataset!
+
+Our paper has been accepted on CVPR 2024 🎉🎉🎉
+
+Checkout our [project website](https://ai4ce.github.io/MARS/) for demo videos.
+Codes to reproduce the videos are available in `/visualize` folder of `main` branch.
+
+<br/>
+
+## Intro
+### The MARS dataset is collected with a fleet of autonomous vehicles from [MayMobility](https://maymobility.com/).
+
+The dataset follows the same structure as the [NuScenes](https://www.nuscenes.org/nuscenes) Dataset:
+
+- Multitraversal: each location is saved as one NuScenes object, and each traversal is one scene.
+- Multiagent: the whole set is a NuScenes object, and each multi-agent encounter is one scene.
+
+<br/>
+
+## Download
+Both Multiagent and Multitraversal subsets are now available for [download on huggingface](https://huggingface.co/datasets/ai4ce/MARS). 
+
+<br/>
 
 ## Overview
-[Initialization](#initialization)
+This tutorial explains how the NuScenes structure works in our dataset, including how you may access a scene and query its samples of sensor data.
 
-[Scene](#scene)
-
-[Sample](#sample)
-
-[Sample Data](#sample-data)
-
-[LiDAR-Image projection](#lidar-image-projection)
-
-## Our paper has been accepted on CVPR 2024 🎉🎉🎉
-Checkout our [project website](https://ai4ce.github.io/MARS/) for an overview & demos.
-
-Codes to reproduce the demo videos on [our website](https://ai4ce.github.io/MARS/) are available in `/visualize` of the `main` branch.
-
-
-
-### The MARS dataset follows the same structure as the NuScenes Dataset.
-
-Multitraversal: each location is saved as one NuScenes object, and each traversal is one scene.
-
-Multiagent: the whole set is a NuScenes object, and each multi-agent encounter is one scene.
+- [Devkit Initialization](#initialization)
+  - [Multitraversal](#load-multitraversal)
+  - [Multiagent](#load-multiagent)
+- [Scene](#scene)
+- [Sample](#sample)
+- [Sample Data](#sample-data)
+  - [Camera](#camera-data)
+  - [LiDAR](#lidar-data)
+  - [IMU](#imu-data)
+  - [Ego & Sensor Pose](#vehicle-and-sensor-pose)
+- [LiDAR-Image projection](#lidar-image-projection)
 
 <br/>
 
@@ -37,16 +55,18 @@ Import NuScenes devkit:
 from nuscenes.nuscenes import NuScenes
 ```
 
-Multitraversal example: loading data of location 10:
+#### Load Multitraversal 
+loading data of location 10:
 ```
 # The "version" variable is the name of the folder holding all .json metadata tables.
 location = 10
-mars_10 = NuScenes(version='v1.0', dataroot=f'/MARS_multitraversal/{location}', verbose=True)
+nusc = NuScenes(version='v1.0', dataroot=f'/MARS_multitraversal/{location}', verbose=True)
 ```
 
-Multiagent example: loading data for the full set:
+#### Load Multiagent
+loading data for the full set:
 ```
-mars_multiagent = NuScenes(version='v1.0', dataroot=f'/MARS_multiagent', verbose=True)
+nusc = NuScenes(version='v1.0', dataroot=f'/MARS_multiagent', verbose=True)
 ```
 
 <br/>
