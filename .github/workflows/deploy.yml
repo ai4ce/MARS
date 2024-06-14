@@ -3,7 +3,6 @@ name: Deploy site
 on:
   push:
     branches:
-      - master
       - webpage_source
     paths:
       - "assets/**"
@@ -29,7 +28,6 @@ on:
       - "!README.md"
   pull_request:
     branches:
-      - master
       - webpage_source
     paths:
       - "assets/**"
