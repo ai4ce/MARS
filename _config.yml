@@ -8,7 +8,7 @@ middle_name: R.
 last_name: Name
 email: zl3466@nyu.edu
 proj_github: https://github.com/ai4ce/MARS
-paper_url: sth_tobe_updated
+paper_url: https://arxiv.org/abs/2406.09383
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
