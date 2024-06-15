@@ -17,6 +17,10 @@ Codes to reproduce the videos are available in `/visualize` folder of `main` bra
 
 ![teaser](https://github.com/ai4ce/MARS/assets/105882130/963f7ea2-0590-42dc-9ddd-22a9b57f947c)
 
+![61-ezgif com-video-to-gif-converter](https://github.com/ai4ce/MARS/assets/105882130/3d2cdf85-c18d-4fb4-be08-a94ee65ddcbd)
+
+
+
 <br/>
 
 # News
