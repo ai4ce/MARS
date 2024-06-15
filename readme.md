@@ -12,13 +12,15 @@
 
 [Tutorial](#tutorial)
 
-Checkout our [project website](https://ai4ce.github.io/MARS/) for demo videos.
+Checkout our [project website](https://ai4ce.github.io/MARS/) for more demo videos.
 Codes to reproduce the videos are available in `/visualize` folder of `main` branch.
 
 ![teaser](https://github.com/ai4ce/MARS/assets/105882130/963f7ea2-0590-42dc-9ddd-22a9b57f947c)
 
+# Multiagent
 <img src="assets/multiagent_21.gif" width="100%"/>
 
+# Multitraversal
 <img src="assets/multitraversal_61.gif" width="100%"/>
 
 
