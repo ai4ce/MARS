@@ -1,10 +1,90 @@
-# Dataset Tutorial
+# Multiagent Multitraversal Multimodal Self-Driving: Open MARS Dataset
+[Yiming Li](https://roboticsyimingli.github.io/), 
+[Zhiheng Li](https://zl3466.github.io/), 
+[Nuo Chen](), 
+[Moonjun Gong](https://moonjungong.github.io/), 
+[Zonglin Lyu](), 
+[Zehong Wang](), 
+[Peili Jiang](), 
+[Chen Feng](https://engineering.nyu.edu/faculty/chen-feng)
 
-### The MARS dataset follows the same structure as the NuScenes Dataset.
+[Paper](https://arxiv.org/abs/2406.09383)
 
-Multitraversal: each location is saved as one NuScenes object, and each traversal is one scene.
+[Tutorial](#tutorial)
 
-Multiagent: the whole set is a NuScenes object, and each multi-agent encounter is one scene.
+Checkout our [project website](https://ai4ce.github.io/MARS/) for demo videos.
+Codes to reproduce the videos are available in `/visualize` folder of `main` branch.
+
+![teaser](https://github.com/ai4ce/MARS/assets/105882130/963f7ea2-0590-42dc-9ddd-22a9b57f947c)
+
+![61-ezgif com-video-to-gif-converter](https://github.com/ai4ce/MARS/assets/105882130/3d2cdf85-c18d-4fb4-be08-a94ee65ddcbd)
+
+
+
+<br/>
+
+# News
+
+- [2024/06] Both Multiagent and Multitraversal subsets are now available for download on [huggingface](https://huggingface.co/datasets/ai4ce/MARS). 
+
+- [2024/06]The preprint version is available on [arXiv]([https://huggingface.co/datasets/ai4ce/MARS](https://arxiv.org/abs/2406.09383)). 
+
+- [2024/02] Our paper has been accepted on CVPR 2024 🎉🎉🎉
+
+
+
+<br/>
+
+# Abstract
+In collaboration with the self-driving company [May Mobility](https://maymobility.com/), we present the MARS dataset which unifies scenarios that enable multiagent, multitraversal, and multimodal autonomous vehicle research.
+
+MARS is collected with a fleet of autonomous vehicles driving within a certain geographical area. Each vehicle has its own route and different vehicles may appear at nearby locations. Each vehicle is equipped with a LiDAR and surround-view RGB cameras.
+
+We curate two subsets in MARS: one facilitates collaborative driving with multiple vehicles simultaneously present at the same location, and the other enables memory retrospection through asynchronous traversals of the same location by multiple vehicles. We conduct experiments in place recognition and neural reconstruction. More importantly, MARS introduces new research opportunities and challenges such as multitraversal 3D reconstruction, multiagent perception, and unsupervised object discovery.
+
+
+## Our dataset uses the same structure as the [NuScenes](https://www.nuscenes.org/nuscenes) Dataset:
+
+- Multitraversal: each location is saved as one NuScenes object, and each traversal is one scene.
+- Multiagent: the whole set is a NuScenes object, and each multiagent encounter is one scene.
+
+<br/>
+
+# License
+[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+<br/>
+
+# Bibtex
+
+```
+@InProceedings{Li_2024_CVPR,
+    author    = {Li, Yiming and Li, Zhiheng and Chen, Nuo and Gong, Moonjun and Lyu, Zonglin and Wang, Zehong and Jiang, Peili and Feng, Chen},
+    title     = {Multiagent Multitraversal Multimodal Self-Driving: Open MARS Dataset},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {22041-22051}
+}
+```
+
+<br/>
+
+# Tutorial
+This tutorial explains how the NuScenes structure works in our dataset, including how you may access a scene and query its samples of sensor data.
+
+- [Devkit Initialization](#initialization)
+  - [Multitraversal](#load-multitraversal)
+  - [Multiagent](#load-multiagent)
+- [Scene](#scene)
+- [Sample](#sample)
+- [Sample Data](#sample-data)
+  - [Sensor Names](#sensor-names)
+  - [Camera](#camera-data)
+  - [LiDAR](#lidar-data)
+  - [IMU](#imu-data)
+  - [Ego & Sensor Pose](#vehicle-and-sensor-pose)
+- [LiDAR-Image projection](#lidar-image-projection)
 
 <br/>
 
@@ -14,22 +94,23 @@ First, install `nuscenes-devkit` following NuScenes's repo tutorial, [Devkit set
 pip install nuscenes-devkit
 ```
 
-## Usage:
 Import NuScenes devkit:
 ```
 from nuscenes.nuscenes import NuScenes
 ```
 
-Multitraversal example: loading data of location 10:
+#### Load Multitraversal 
+loading data of location 10:
 ```
 # The "version" variable is the name of the folder holding all .json metadata tables.
 location = 10
-mars_10 = NuScenes(version='v1.0', dataroot=f'/MARS_multitraversal/{location}', verbose=True)
+nusc = NuScenes(version='v1.0', dataroot=f'/MARS_multitraversal/{location}', verbose=True)
 ```
 
-Multiagent example: loading data for the full set:
+#### Load Multiagent
+loading data for the full set:
 ```
-mars_multiagent = NuScenes(version='v1.0', dataroot=f'/MARS_multiagent', verbose=True)
+nusc = NuScenes(version='v1.0', dataroot=f'/MARS_multiagent', verbose=True)
 ```
 
 <br/>
@@ -108,6 +189,7 @@ Output:
 <br/>
 
 ## Sample Data
+### Sensor Names
 Our sensor names are different from NuScenes' sensor names. It is important that you use the correct name when querying sensor data. Our sensor names are:
 ```
 ['CAM_FRONT_CENTER',
@@ -122,6 +204,9 @@ Our sensor names are different from NuScenes' sensor names. It is important that
 
 ---
 ### Camera Data
+All image data are already undistorted. 
+
+To load a piece data, we start with querying its `sample_data` dictionary object from the metadata:
 ```
 sensor = 'CAM_FRONT_CENTER'
 sample_data_token = my_sample['data'][sensor]
@@ -154,8 +239,14 @@ Output:
 - `prev`: previous data token for this sensor
 - `next`: next data token for this sensor
 
-All image data are already undistorted. You may now load the image in any ways you'd like. Here's an example using cv2:
+<br/>
+
+After getting the `sample_data` dictionary, Use NuScenes devkit's `get_sample_data()` function to retrieve the data's absolute path. 
+
+Then you may now load the image in any ways you'd like. Here's an example using `cv2`:
 ```
+import cv2
+
 data_path, boxes, camera_intrinsic = nusc.get_sample_data(sample_data_token)
 img = cv2.imread(data_path)
 cv2.imshow('fc_img', img)
@@ -174,6 +265,7 @@ array([[661.094568 ,   0.       , 370.6625195],
 
 ---
 ### LiDAR Data
+Same as loading camera data, we start with querying the `sample_data` dictionary for LiDAR sensor. 
 
 Impoirt data calss "LidarPointCloud" from NuScenes devkit for convenient lidar pcd loading and manipulation.
 
@@ -183,6 +275,7 @@ The 5-dimensional data array is in `pcd.points`. Below is an example of visualiz
 
 
 ```
+import open3d as o3d
 from nuscenes.utils.data_classes import LidarPointCloud
 
 sensor = 'LIDAR_FRONT_CENTER'
@@ -342,6 +435,9 @@ nusc.render_pointcloud_in_image(my_sample['token'],
 Output: 
 
 ![image](https://github.com/ai4ce/MARS/assets/105882130/f50623e1-fa79-4e59-9daf-b76a760d20f5)
+
+
+
 
 
 
