@@ -26,7 +26,7 @@ Note: the 67 locations are indexed from 0-66, but #2 has been removed due to sca
 
 ### <span style="font-weight: bold; color:#57068c">Download Links</span>
 
-The multitraversal dataset is seperated by location into 66 individual zip files, available for download [here](https://drive.google.com/drive/folders/10aA0mcsXqNKnt1Mr8jYex8C_zzHng3Ia?usp=sharing) on GoogleDrive
+The multitraversal dataset is seperated by location into 66 individual zip files, available for download [here](https://huggingface.co/datasets/ai4ce/MARS/tree/main/Multitraversal_2023_10_04-2024_03_08) on Huggingface.
 
 ---
 

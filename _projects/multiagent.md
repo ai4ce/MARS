@@ -23,7 +23,7 @@ Over 90% of all frames contain agents less than 40m away from each other, granti
 ---
 ### <span style="font-weight: bold; color:#57068c">Download Links</span>
 
-The multiagent dataset with all 53 scenes is available for download as one zip file [here](https://drive.google.com/drive/folders/10aA0mcsXqNKnt1Mr8jYex8C_zzHng3Ia?usp=sharing) on GoogleDrive
+The multiagent dataset with all 53 scenes is available for download as one zip file [here](https://huggingface.co/datasets/ai4ce/MARS/tree/main/Multiagent_53scene) on Huggingface.
 
 ---
 
